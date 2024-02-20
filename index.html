@@ -7,29 +7,29 @@
 </head>
 <body>
     <!--Seccion encriptadora-->
-    <section>
+    <section id="secEncriptadora">
         <header>
             <a href=""><img src="IMG/Logo.png" alt="a minuscula logo"></a>
         </header>
         <!--Introducción de texto-->
         <div>
-            <textarea name="textoSimple" id="textoSimple" cols="30" rows="10"></textarea>
+            <textarea name="textoInput" id="textoInput" cols="30" rows="10"></textarea>
         </div>
         <div>
             <div>
                 <p>LETRAS MINUSCULAS Y SIN ACENTO</p>
             </div>
             <div>
-                <button id="encriptar">
+                <button id="encriptar" onclick="encriptarTexto()">
                     ENCRIPTAR
                 </button>
-                <button id="desemcriptar">
+                <button id="desemcriptar" onclick="desemcriptarTexto()">
                     DESEMCRIPTADOR
                 </button>
             </div>
         </div>
     <!--Seccion informativa-->
-    <section>
+    <section id="secInformativa">
         <div>
             <!--Imagen-->
             <div>
@@ -44,14 +44,14 @@
     </section>
     </section>
     <!--Seccion encriptada-->
-    <section>
+    <section id="secEncriptda">
         <div>
             <!--Texto encriptado-->
             <div>
-                <textarea name="textoEncriptado" id="" cols="30" rows="10"></textarea>
+                <textarea name="textoOutput" id="textoOutput" cols="30" rows="10"></textarea>
             </div>
             <div>
-                <button>
+                <button id="btCopiar" onclick="copiarPortapapeles()">
                     COPIAR
                 </button>
             </div>
