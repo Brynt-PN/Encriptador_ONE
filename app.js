@@ -36,12 +36,26 @@ function conditionInitial(){
     secEncriptda.style.display = 'none';
 }
 
+function conditionEncriptadora(){
+    secInformativa.style.display = 'none';
+    secEncriptda.style.display = 'block';
+}
+
+function mostrarTexto(text){
+    output.value = text
+}
+
 function encriptarTexto(){
+    let textoutput = '';
     let textinput = input.value.toLowerCase();
-    console.log(textinput);
     for (let caracter of textinput) {
         if (vocales.includes(caracter)) {
-            console.log(caracter)
+            textoutput = textoutput + codigos[caracter];
+        }
+        else{
+            textoutput = textoutput + caracter;
         }
     }
+    conditionEncriptadora();
+    mostrarTexto(textoutput);
 }
