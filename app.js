@@ -21,11 +21,11 @@ let codigos = {
 };
 
 let codigosInversos = {
-    enter : "e",
-    imes  : "i",
-    ai    : "a",
-    ober  : "o",
-    ufat  : "u"
+    e : 5,
+    i : 4,
+    a : 2,
+    o : 4,
+    u : 4
 };
 
 // Llamados
@@ -41,13 +41,19 @@ function conditionEncriptadora(){
     secEncriptda.style.display = 'block';
 }
 
+function capturarTexto(){
+    let text = input.value.toLowerCase();
+    input.value = ''
+    return text
+}
+
 function mostrarTexto(text){
     output.value = text
 }
 
 function encriptarTexto(){
     let textoutput = '';
-    let textinput = input.value.toLowerCase();
+    let textinput = capturarTexto();
     for (let caracter of textinput) {
         if (vocales.includes(caracter)) {
             textoutput = textoutput + codigos[caracter];
@@ -58,4 +64,27 @@ function encriptarTexto(){
     }
     conditionEncriptadora();
     mostrarTexto(textoutput);
+}
+
+function desemcriptarTexto(){
+    let textoutput = '';
+    let textinput = capturarTexto();
+    let indice = 0;
+    while(indice < textinput.length){
+        if (vocales.includes(textinput[indice])) {
+            textoutput = textoutput + textinput[indice];
+            indice += codigosInversos[textinput[indice]];
+        }
+        else{
+            textoutput = textoutput + textinput[indice];
+            indice++
+        }
+    }
+    conditionEncriptadora();
+    mostrarTexto(textoutput);
+
+}
+
+function copiarPortapapeles(){
+    navigator.clipboard.writeText(output.value);
 }
