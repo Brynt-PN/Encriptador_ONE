@@ -8,57 +8,59 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <!--Seccion encriptadora-->
-    <section id="secEncriptadora">
-        <header>
-            <a href=""><img id="Logo" src="IMG/Logo.png" alt="a minuscula logo"></a>
-        </header>
-        <!--Introducción de texto-->
-        <div>
-            <textarea name="textoInput" id="textoInput" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <div>
-                <p>LETRAS MINUSCULAS Y SIN ACENTO</p>
+    <div id="pantallaDividida">
+        <!--Seccion encriptadora-->
+        <section id="secEncriptadora" class="izquierda">
+            <header class="contIzquierdo">
+                <a href=""><img id="Logo" src="IMG/Logo.png" alt="a minuscula logo"></a>
+            </header>
+            <!--Introducción de texto-->
+            <div class="contIzquierdo">
+                <textarea name="textoInput" id="textoInput" cols="30" rows="10" placeholder="Ingresa tu mensaje"></textarea>
             </div>
-            <div>
-                <button id="encriptar" onclick="encriptarTexto()">
-                    ENCRIPTAR
-                </button>
-                <button id="desemcriptar" onclick="desemcriptarTexto()">
-                    DESEMCRIPTAR
-                </button>
+            <div class="contIzquierdo">
+                <div id="aviso">
+                    <p>LETRAS MINUSCULAS Y SIN ACENTO</p>
+                </div>
+                <div id="botones">
+                    <button id="encriptar" onclick="encriptarTexto()">
+                        ENCRIPTAR
+                    </button>
+                    <button id="desencriptar" onclick="desemcriptarTexto()">
+                        DESEMCRIPTAR
+                    </button>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--Seccion informativa-->
-    <section id="secInformativa">
-        <div id="conteinInformation">
-            <!--Imagen-->
-            <div>
-                <img src="IMG/Muñeco.png" alt="Mujer de rodillas">
+        </section>
+        <!--Seccion informativa-->
+        <section id="secInformativa" class="derecha">
+            <div id="conteinInformation">
+                <!--Imagen-->
+                <div>
+                    <img src="IMG/Muñeco.png" alt="Mujer de rodillas">
+                </div>
+                <!--Texto informativo-->
+                <div>
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
             </div>
-            <!--Texto informativo-->
+        </section>
+        <!--Seccion encriptada-->
+        <section id="secEncriptda" class="derecha">
             <div>
-                <h2>Ningun mensaje fue encontrado</h2>
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                <!--Texto encriptado-->
+                <div>
+                    <textarea name="textoOutput" id="textoOutput" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <button id="btCopiar" onclick="copiarPortapapeles()">
+                        COPIAR
+                    </button>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--Seccion encriptada-->
-    <section id="secEncriptda">
-        <div>
-            <!--Texto encriptado-->
-            <div>
-                <textarea name="textoOutput" id="textoOutput" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <button id="btCopiar" onclick="copiarPortapapeles()">
-                    COPIAR
-                </button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 <script src="app.js"></script>
 </html>

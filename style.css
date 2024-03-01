@@ -1,34 +1,74 @@
-body{
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-#secEncriptadora{
-    width: 70%;
-    height: auto;
-    background-color: blue;
-}
-
-
-
-#Logo{
-    width: Fixed (120px);
-    height: Fixed (48px);
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 40px;
-
-}
-
-#secInformativa{
-    width: 30%;
-    height: auto;
-    background-color: brown;
-}
-
-#conteinInformation{
+.izquierda{
+    background-color: aquamarine;
+    height: 90vh;
+    width: 65%;
     
+}
 
+.derecha{
+    background-color: tomato;
+    height: 90vh;
+    width: 35%;
+    border-radius: 30px;
+}
+
+#pantallaDividida{
+    background-color: aquamarine;
+    display: flex;
+    padding: 5vh;
+}
+
+.contIzquierdo{
+    background-color: papayawhip;
+    width: 100%;
+}
+
+header{
+    height: 10vh;
+}
+
+textarea{
+    background-color: aquamarine;
+    width: 80%;
+    height: 65vh;
+    padding-left: 15%;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    font-size: 3em;
+}
+
+#aviso{
+    height: 3vh;
+    font-size: 0.8em;
+    margin-left: 15%;
+}
+
+#botones{
+    width: 80%;
+    height: 11vh;
+    margin-left: 15%;
+}
+
+#encriptar{
+    width: 49%;
+    height: 70%;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+}
+
+#desencriptar{
+    width: 49%;
+    height: 70%;
+    margin-left: 1%;
+    padding: 0;
+    border: 1px black solid;
+    border-radius: 20px;
 }
