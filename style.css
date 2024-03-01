@@ -1,34 +1,35 @@
 body{
-    width: auto;
-    height: 100%;
+    height: 100vh;
+    padding: 2.5vh;
     display: flex;
-    flex-direction: row;
+}
+
+.contain{
+    display: inline-block;
+    border-radius: 30px;
 }
 
 #secEncriptadora{
-    width: 70%;
-    height: auto;
-    background-color: blue;
-}
-
-
-
-#Logo{
-    width: Fixed (120px);
-    height: Fixed (48px);
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-bottom: 40px;
-
+    background-color: aquamarine;
+    width: 200vh;
+    margin: 0 1%;
 }
 
 #secInformativa{
-    width: 30%;
-    height: auto;
-    background-color: brown;
+    background-color: tomato;
+    width: 100vh;
+    margin: 0 1vh;
 }
 
-#conteinInformation{
+.img_center{
+    width: 336px;
+    margin: 0 auto;
     
+}
 
+#img{
+    height: 250px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
 }
