@@ -1,29 +1,30 @@
 body {
+    background-color: #D8DFE8;
     margin: 0;
     padding: 0;
 }
 
 .izquierda{
-    background-color: aquamarine;
+    background-color: #F3F5FC;
     height: 90vh;
     width: 65%;
     
 }
 
 .derecha{
-    background-color: tomato;
+    background-color: #D8DFE8;
     height: 90vh;
     width: 35%;
 }
 
 #pantallaDividida{
-    background-color: aquamarine;
+    background-color: #D8DFE8;
     display: flex;
     padding: 5vh;
 }
 
 .contIzquierdo{
-    background-color: papayawhip;
+    background-color: #D8DFE8;
     width: 100%;
 }
 
@@ -32,7 +33,8 @@ header{
 }
 
 #textoInput{
-    background-color: aquamarine;
+    background-color: #D8DFE8;
+    color: #0A3871;
     width: 80%;
     height: 65vh;
     padding-left: 15%;
@@ -41,12 +43,19 @@ header{
     resize: none;
     overflow: auto;
     font-size: 3em;
+    font-family: "Inter", sans-serif;
+}
+
+#textoInput::placeholder{
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
 }
 
 #aviso{
     height: 3vh;
-    font-size: 0.8em;
+    font-size: 0.6em;
     margin-left: 15%;
+    font-family: "Inter", sans-serif;
 }
 
 #botones{
@@ -56,24 +65,32 @@ header{
 }
 
 #encriptar{
+    background-color: #0A3871;
+    color: #D8DFE8;
     width: 49%;
     height: 70%;
     padding: 0;
     border: none;
     border-radius: 20px;
+    font-size: 1.2em;
+    font-family: "Inter", sans-serif;
 }
 
 #desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
     width: 49%;
     height: 70%;
     margin-left: 1%;
     padding: 0;
-    border: 1px black solid;
+    border: 1px #0A3871 solid;
     border-radius: 20px;
+    font-size: 1.2em;
+    font-family: "Inter", sans-serif;
 }
 
 .fondoDerecha{
-    background-color: aliceblue;
+    background-color: white;
     height: 90vh;
     width: 90%;
     margin: 0 5% 0 5%;
@@ -83,6 +100,7 @@ header{
 .contDerecho{
     width: 90%;
     margin: 0 5% 0 5%;
+    font-family: "Inter", sans-serif;
 }
 
 #contImagen{
@@ -108,7 +126,8 @@ header{
 }
 
 #textoOutput{
-    background-color: tomato;
+    background-color: white;
+    color: #495057;
     width: 100%;
     height: 72vh;
     margin-top: 3vh;
@@ -117,16 +136,25 @@ header{
     resize: none;
     overflow: auto;
     font-size: 3em;
-}
-
-#botonCopiar{
-    
+    font-family: "Inter", sans-serif;
 }
 
 #btCopiar{
+    background-color: white;
+    color: #0A3871;
     width: 80%;
     height: 7.5vh;
     margin: 5% 10% 0 10%;
-    border: 1px black solid;
+    border: 1px #0A3871 solid;
     border-radius: 20px;
+    font-size: 1.2em;
+    font-family: "Inter", sans-serif;
+}
+
+.action:active{
+    transform: scale(1.01);
+}
+
+@media screen and (max-width:480px){
+    
 }
