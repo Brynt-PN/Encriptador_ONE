@@ -5,7 +5,7 @@ body {
 }
 
 .izquierda{
-    background-color: #F3F5FC;
+    background-color: #D8DFE8;
     height: 90vh;
     width: 65%;
     
@@ -105,12 +105,16 @@ header{
 
 #contImagen{
     height: 50%;
+    max-height: 50%;
     padding-top: 25%;    
 }
 
 #contImagen img{
+    width: 80%;
+    margin-left: 10%;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .contDerecho h2{
@@ -155,6 +159,217 @@ header{
     transform: scale(1.01);
 }
 
-@media screen and (max-width:480px){
-    
+@media screen and (max-width:1024px){
+    #pantallaDividida{
+        display: block;
+        padding: 3vh;
+    }
+    .izquierda{
+        background-color: #D8DFE8;
+        height: 75vh;
+        width: 100%;
+    }
+    .derecha{
+        height: 19vh;
+        width: 100%;
+    }
+    header{
+        height: 7.7vh;
+        padding-top: 2.5% ;
+    }
+    #textoInput{
+        width: 100%;
+        height: 55.5vh;
+        padding: 0;
+        font-size: 2em;
+    }
+    #aviso{
+        height: 2.3vh;
+        font-size: 0.7em;
+        margin-left: 0%;
+    }
+    #botones{
+        width: 100%;
+        height: 8.5vh;
+        margin-left: 0%;
+    }
+    .fondoDerecha{
+        height: 15vh;
+        width: 100%;
+        margin: 2vh 0 2vh 0;
+    }
+    #contImagen{
+        display: none;
+    }
+    .contDerecho{
+        width: 90%;
+        height: 60%;
+        margin: 0 5% 0 5%;
+        padding: 5% 0 5% 0;
+    }
+    .contDerecho h2{
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+    .contDerecho p{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #secEncriptda{
+        height: 40vh;
+    }
+    #fondoEncriptado{
+        height: 40vh;
+        width: 100%;
+        margin: 2vh 0 2vh 0;
+    }
+    #textoOutput{
+        width: 100%;
+        max-height: 24vh;
+        margin-top:0;
+        font-size: 2em;
+    }
+    #contCopiar{
+        height: 7vh;
+        padding:1% 0 1% 0;
+
+    }
+    #btCopiar{
+        width: 100%;
+        height: 6.5vh;
+        margin: 0 0 0 0;
+        font-size: 1.2em;
+    }
+    @media screen and (max-height:820px){
+        .contDerecho h2{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.25em;
+        }
+        .contDerecho p{
+            text-align: center;
+            font-size: 1em;
+        }
+        @media screen and (max-height:600px){
+            .contDerecho{
+                width: 90%;
+                height: 60%;
+                margin: 0 5% 0 5%;
+                padding: 2.5% 0 2.5% 0;
+            }
+        }
+    }
 }
+
+@media screen and (max-width:450px){
+    #pantallaDividida{
+        display: block;
+        padding: 1.5vh;
+    }
+    .izquierda{
+        background-color: #D8DFE8;
+        height: 75vh;
+        width: 100%;
+    }
+    .derecha{
+        height: 20vh;
+        width: 100%;
+    }
+    header{
+        height: 7.7vh;
+        padding-top: 3% ;
+    }
+    #textoInput{
+        width: 100%;
+        height: 45.5vh;
+        padding: 0;
+        font-size: 2em;
+    }
+    #aviso{
+        height: 2.3vh;
+        font-size: 0.7em;
+        margin-left: 0%;
+    }
+    #botones{
+        width: 100%;
+        height: 18.5vh;
+        margin-left: 0%;
+    }
+    #encriptar{
+        display: block;
+        width: 100%;
+        height: 39%;
+        margin: 0;
+        margin-top: 2.5%;
+        font-size: 1.2em;
+    }
+    #desencriptar{
+        display: block;
+        width: 100%;
+        height: 39%;
+        margin: 0;
+        margin-top: 5%;
+        font-size: 1.2em;
+    }
+    .fondoDerecha{
+        height: 20vh;
+        width: 100%;
+        margin: 2vh 0 2vh 0;
+    }
+    #contImagen{
+        display: none;
+    }
+    .contDerecho{
+        width: 90%;
+        height: 80%;
+        margin: 0 5% 0 5%;
+        padding: 5% 0 5% 0;
+    }
+    .contDerecho h2{
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    .contDerecho p{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    #secEncriptda{
+        height: 60vh;
+    }
+    #fondoEncriptado{
+        height: 60vh;
+        width: 100%;
+        margin: 2vh 0 2vh 0;
+    }
+    #textoOutput{
+        width: 100%;
+        max-height: 100%;
+        margin-top:0;
+        font-size: 2em;
+    }
+    #contCopiar{
+        height: 7vh;
+        padding:1% 0 1% 0;
+
+    }
+    #btCopiar{
+        width: 100%;
+        height: 6.5vh;
+        margin: 0 0 0 0;
+        font-size: 1.2em;
+    }
+    @media screen and (max-width:380px){
+        .contDerecho h2{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.25em;
+        }
+        .contDerecho p{
+            text-align: center;
+            font-size: 1em;
+        }
+    }
+}
+
