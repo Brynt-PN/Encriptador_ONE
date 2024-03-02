@@ -4,55 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Encriptador</title>
 </head>
 <body>
-    <!--Seccion encriptadora-->
-    <section id="secEncriptadora" class="contain">
-        <header>
-            <a href=""><img id="Logo" src="IMG/Logo.png" alt="a minuscula logo"></a>
-        </header>
-        <!--Introducción de texto-->
-        <div>
-            <textarea name="textoInput" id="textoInput" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <p>LETRAS MINUSCULAS Y SIN ACENTO</p>
-        </div>
-        <div>
-            <button id="encriptar" onclick="encriptarTexto()">
-                ENCRIPTAR
-            </button>
-            <button id="desemcriptar" onclick="desemcriptarTexto()">
-                DESEMCRIPTAR
-            </button>
-        </div>
-    </section>
-    <!--Seccion informativa-->
-    <section id="secInformativa" class="contain">
-        <!--Imagen-->
-        <div class="img_center">
-            <img id="img" src="IMG/Muñeco.png" alt="Mujer de rodillas">
-        </div>
-        <!--Texto informativo-->
-        <div>
-            <h2>Ningun mensaje fue encontrado</h2>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
-        </div>
-    </section>
-    <!--Seccion encriptada-->
-    <section id="secEncriptda" class="contain">
-        <!--Texto encriptado-->
-        <div>
-            <textarea name="textoOutput" id="textoOutput" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <button id="btCopiar" onclick="copiarPortapapeles()">
-                COPIAR
-            </button>
-        </div>
-    </section>
+    <div id="pantallaDividida">
+        <!--Seccion encriptadora-->
+        <section id="secEncriptadora" class="izquierda">
+            <header class="contIzquierdo">
+                <a href=""><img id="Logo" src="IMG/Logo.png" alt="a minuscula logo"></a>
+            </header>
+            <!--Introducción de texto-->
+            <div class="contIzquierdo">
+                <textarea name="textoInput" id="textoInput" cols="30" rows="10" placeholder="Ingresa tu mensaje"></textarea>
+            </div>
+            <div class="contIzquierdo">
+                <div id="aviso">
+                    <p>⚠ LETRAS MINUSCULAS Y SIN ACENTO</p>
+                </div>
+                <div id="botones">
+                    <button id="encriptar" class="action"  onclick="encriptarTexto()">
+                        ENCRIPTAR
+                    </button>
+                    <button id="desencriptar" class="action" onclick="desemcriptarTexto()">
+                        DESEMCRIPTAR
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!--Seccion informativa-->
+        <section id="secInformativa" class="derecha">
+            <div class="fondoDerecha">
+                <!--Imagen-->
+                <div id="contImagen" class="contDerecho">
+                    <img src="IMG/Muñeco.png" alt="Mujer de rodillas">
+                </div>
+                <!--Texto informativo-->
+                <div class="contDerecho">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+        </section>
+        <!--Seccion encriptada-->
+        <section id="secEncriptda" class="derecha">
+            <div id="fondoEncriptado" class="fondoDerecha">
+                <!--Texto encriptado-->
+                <div class="contDerecho">
+                    <textarea name="textoOutput" id="textoOutput" cols="30" rows="10"></textarea>
+                </div>
+                <div id="contCopiar" class="contDerecho">
+                    <button id="btCopiar" class="action" onclick="copiarPortapapeles()">
+                        COPIAR
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 <script src="app.js"></script>
 </html>
